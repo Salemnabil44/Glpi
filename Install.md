@@ -1,5 +1,5 @@
 
-### Installation des pré-requis
+## Installation des pré-requis
 
 Faisons une mise-à-jour : sudo apt-get update && sudo apt-get upgrade
 
