@@ -1,3 +1,4 @@
+
 ### Installation des pré-requis
 
 Faisons une mise-à-jour : sudo apt-get update && sudo apt-get upgrade
@@ -42,6 +43,7 @@ exit
 On récupère la source : wget https://github.com/glpi-project/glpi/releases/download/10.0.2/glpi-10.0.16.tgz (attention d'avoir la derniere version)
 
 On va mettre le contenu téléchargé dans un autre emplacement : 
+
 sudo mkdir /var/www/html/glpi.monNomDeDomaine
 sudo tar -xzvf glpi-10.0.16.tgz
 sudo cp -R glpi/* /var/www/html/glpi.monNomDeDomaine/
@@ -78,7 +80,7 @@ Choisi une adresse IP avec le masque associé et mets-là dans la configuration 
 Démarre ton autre VM (client Windows ou Linux)
 Ping ta VM Ubuntu server pour vérifier que la configuration réseau est bonne.
 
-Si tout est correct,ouvre un navigateur web et entre l'adresse http://adresse IP du serveur glpi/glpi
+Si tout est correct,ouvre un navigateur web et entre l'adresse http://adresseIPduserveur/glpi.monNomDeDomaine
 Dans les fenêtres graphique de configuration :
 
 Mettre Français en langue
