@@ -15,7 +15,7 @@ Installation des modules annexes :
 sudo apt-get install php libapache2-mod-php -y
 sudo apt-get install php-{ldap,imap,apcu,xmlrpc,curl,common,gd,json,mbstring,mysql,xml,intl,zip,bz2}
 
-### Configuration de MariaDB
+## Configuration de MariaDB
 
 La commande ci-dessous va lancer le processus d'initialisation de la base de données :
 
@@ -38,7 +38,7 @@ grant all privileges on glpidb.* to glpi@localhost identified by 'motDePasse';
 flush privileges;
 exit
 
-### Récupération des sources Glpi
+## Récupération des sources Glpi
 
 On récupère la source : wget https://github.com/glpi-project/glpi/releases/download/10.0.2/glpi-10.0.16.tgz (attention d'avoir la derniere version)
 
@@ -53,7 +53,7 @@ On va modifier les droits :
 sudo chown -R www-data:www-data /var/www/html/glpi.monNomDeDomaine/
 sudo chmod -R 775 /var/www/html/glpi.monNomDeDomaine/
 
-### Configuration de PHP
+## Configuration de PHP
 
 On va tout d'abord éditer le fichier php.ini qui est sous /etc/php/8.1/apache2/
 Ensuite on va modifier les paramètres suivants :
@@ -66,7 +66,7 @@ session.use_trans_sid = 0
 
 Fermer le fichier et redémarrer la machine avec la commande sudo reboot
 
-### Installation de Glpi
+## Installation de Glpi
 
 On va faire l'installation à partir d'un navigateur web, donc à partir d'une autre machine.
 Il va falloir configurer la carte réseau de ta VM, mettre une adresse IP fixe, et que tu ais une autre VM dans le même réseau que celle-ci.
